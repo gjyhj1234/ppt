@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>携手共赢 · 共启口腔新局 — 松佰供应链战略合作推广提案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ===================== Reset & Base ===================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      background: #e8edf3;
+      color: #1a2340;
+      line-height: 1.5;
+    }
+
+    /* ===================== Page Layout ===================== */
+    /*
+      Each .slide is exactly A4 landscape: 297mm × 210mm.
+      At screen zoom 100% (96 dpi) this is ~1122px × 794px.
+      We use mm units so @media print maps 1:1 to physical PDF pages.
+    */
+    .slide {
+      width: 297mm;
+      height: 210mm;
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 4px 24px rgba(0,0,0,.12);
+      margin: 12px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===================== Print ===================== */
+    @media print {
+      @page { size: A4 landscape; margin: 0; }
+      html, body { background: none; margin: 0; padding: 0; }
+      .slide {
+        width: 297mm;
+        height: 210mm;
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .slide:last-child { page-break-after: avoid; break-after: avoid; }
+    }
+
+    /* ===================== Color Tokens ===================== */
+    :root {
+      --blue:       #1565c0;
+      --blue-mid:   #1976d2;
+      --blue-light: #e3f0ff;
+      --teal:       #00897b;
+      --teal-light: #e0f5f3;
+      --gold:       #e6a817;
+      --gold-light: #fff8e1;
+      --text-dark:  #1a2340;
+      --text-mid:   #374569;
+      --text-muted: #6c7a9c;
+      --divider:    #d0daea;
+      --white:      #ffffff;
+    }
+
+    /* ===================== Typography Helpers ===================== */
+    .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--blue-light);
+      color: var(--blue);
+    }
+
+    /* ===================== Shared Header Bar ===================== */
+    .slide-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14mm;
+      height: 12mm;
+      background: var(--blue);
+      flex-shrink: 0;
+    }
+    .slide-header .brand {
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(255,255,255,.9);
+      letter-spacing: .05em;
+    }
+    .slide-header .page-num {
+      font-size: 12px;
+      color: rgba(255,255,255,.55);
+    }
+
+    /* ===================== Shared Footer Bar ===================== */
+    .slide-footer {
+      height: 8mm;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--teal) 100%);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 14mm;
+    }
+    .slide-footer span {
+      font-size: 11px;
+      color: rgba(255,255,255,.7);
+      letter-spacing: .08em;
+    }
+
+    /* ===================== Slide Body ===================== */
+    .slide-body {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+    }
+
+    /* =================== PAGE 1 — Welcome =================== */
+    #s1 { }
+    #s1 .slide-body {
+      background: linear-gradient(135deg, #0d3b7a 0%, #1565c0 45%, #00695c 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    /* decorative circles */
+    #s1 .deco-circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: .1;
+      background: #ffffff;
+    }
+    #s1 .c1 { width: 260px; height: 260px; top: -80px; right: -80px; }
+    #s1 .c2 { width: 180px; height: 180px; bottom: -60px; left: -50px; }
+    #s1 .c3 { width: 100px; height: 100px; bottom: 30px; right: 120px; }
+
+    #s1 .s1-top-label {
+      font-size: 12px;
+      letter-spacing: .25em;
+      color: rgba(255,255,255,.7);
+      margin-bottom: 10px;
+    }
+    #s1 .s1-title {
+      font-size: 62px;
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.15;
+      letter-spacing: .04em;
+    }
+    #s1 .s1-title span { color: #7dd3f7; }
+    #s1 .s1-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 16px auto;
+    }
+    #s1 .s1-subtitle {
+      font-size: 24px;
+      color: rgba(255,255,255,.85);
+      text-align: center;
+      letter-spacing: .06em;
+    }
+    #s1 .s1-meta {
+      position: absolute;
+      bottom: 20px;
+      left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    #s1 .s1-meta-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+    #s1 .s1-meta-item .mi-label {
+      font-size: 11px;
+      color: rgba(255,255,255,.5);
+      letter-spacing: .1em;
+    }
+    #s1 .s1-meta-item .mi-val {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255,255,255,.9);
+    }
+
+    /* =================== PAGE 2 — Why Switch =================== */
+    #s2 .slide-body {
+      padding: 8mm 14mm 6mm;
+      flex-direction: column;
+      gap: 5mm;
+    }
+    #s2 .s2-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    #s2 .s2-main-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1.2;
+    }
+    #s2 .s2-sub {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+    #s2 .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5mm;
+      flex: 1;
+    }
+    #s2 .pain-card {
+      border-radius: 8px;
+      padding: 5mm 4.5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      border: 1px solid var(--divider);
+      position: relative;
+      overflow: hidden;
+    }
+    #s2 .pain-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    #s2 .pain-card.red::before   { background: #e53935; }
+    #s2 .pain-card.amber::before { background: #fb8c00; }
+    #s2 .pain-card.blue::before  { background: var(--blue-mid); }
+    #s2 .pain-card.teal::before  { background: var(--teal); }
+
+    #s2 .pain-card .pc-icon {
+      width: 48px; height: 48px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #s2 .pain-card.red   .pc-icon { background: #ffebee; }
+    #s2 .pain-card.amber .pc-icon { background: #fff3e0; }
+    #s2 .pain-card.blue  .pc-icon { background: #e3f2fd; }
+    #s2 .pain-card.teal  .pc-icon { background: #e0f2f1; }
+
+    #s2 .pain-card .pc-title {
+      font-size: 16.5px;
+      font-weight: 700;
+      line-height: 60px;
+      color: var(--text-dark);
+      margin-top: -60px;
+      margin-left: 50px;
+    }
+    #s2 .pain-card .pc-list {
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    #s2 .pain-card .pc-list li {
+      font-size: 16px;
+      color: var(--text-mid);
+      padding-left: 24px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    #s2 .pain-card .pc-list li::before {
+      content: "·";
+      position: absolute;
+      left: 2px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    #s2 .bottom-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--divider);
+      padding-top: 3mm;
+    }
+    #s2 .bottom-note strong { color: var(--blue); }
+
+    /* =================== PAGE 3 — Advantages =================== */
+    #s3 .slide-body {
+      padding: 8mm 14mm 6mm;
+      flex-direction: column;
+      gap: 5mm;
+    }
+    #s3 .s3-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    #s3 .s3-main-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--teal);
+    }
+    #s3 .adv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 4.5mm;
+      flex: 1;
+    }
+    .adv-card {
+      background: #f7faff;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      padding: 4.5mm 5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .adv-card .ac-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .adv-card .ac-num {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .adv-card .ac-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .adv-card .ac-body {
+      font-size: 16px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+    .adv-card .ac-tag {
+      display: inline-block;
+      padding: 1px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--blue-light);
+      color: var(--blue);
+      align-self: flex-start;
+    }
+    .adv-card.highlight {
+      background: linear-gradient(135deg, #e3f0ff 0%, #e0f5f3 100%);
+      border-color: var(--teal);
+    }
+    .adv-card.highlight .ac-num { background: var(--teal); }
+
+    /* =================== PAGE 4 — Cooperation Steps =================== */
+    #s4 .slide-body {
+      padding: 8mm 14mm 6mm;
+      flex-direction: column;
+      gap: 5mm;
+    }
+    #s4 .s4-main-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    #s4 .steps-row {
+      display: flex;
+      gap: 4mm;
+      flex: 1;
+      align-items: stretch;
+    }
+    .step-card {
+      flex: 1;
+      border-radius: 8px;
+      padding: 5mm 4.5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      border: 1px solid var(--divider);
+      background: #f7faff;
+      position: relative;
+    }
+    .step-card .sc-step-num {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: .08em;
+    }
+    .step-card .sc-icon-wrap {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-card.s1c .sc-icon-wrap { background: #e8f4fd; }
+    .step-card.s2c .sc-icon-wrap { background: #fff3e0; }
+    .step-card.s3c .sc-icon-wrap { background: #e8f5e9; }
+    .step-card.s4c .sc-icon-wrap { background: #fce4ec; }
+
+    .step-card .sc-title {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .step-card .sc-body {
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+    .step-card .sc-highlight {
+      margin-top: auto;
+      background: var(--blue-light);
+      color: var(--blue);
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .step-card.s3c .sc-highlight { background: #e8f5e9; color: #2e7d32; }
+    .step-card.s4c .sc-highlight { background: #fce4ec; color: #c62828; }
+
+    /* Arrow connector */
+    .step-arrow {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      color: var(--divider);
+    }
+
+    /* =================== PAGE 5 — Profit Sharing =================== */
+    #s5 .slide-body {
+      padding: 8mm 14mm 6mm;
+      flex-direction: column;
+      gap: 5mm;
+    }
+    #s5 .s5-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    #s5 .s5-main-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    #s5 .profit-row {
+      display: flex;
+      gap: 5mm;
+      flex: 1;
+    }
+    .profit-card {
+      flex: 1;
+      border-radius: 10px;
+      padding: 6mm 5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .profit-card::after {
+      content: "";
+      position: absolute;
+      bottom: -30px; right: -30px;
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      opacity: .08;
+      background: #000;
+    }
+    .profit-card.pc-supplier {
+      background: linear-gradient(135deg, #e3f0ff 0%, #bbdefb 100%);
+      border: 1px solid #90caf9;
+    }
+    .profit-card.pc-promoter {
+      background: linear-gradient(135deg, #e0f5f3 0%, #b2dfdb 100%);
+      border: 1px solid #80cbc4;
+    }
+    .profit-card.pc-raky {
+      background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%);
+      border: 1px solid #ffd54f;
+    }
+    .profit-card .pcc-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+    }
+    .profit-card .pcc-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+    .profit-card .pcc-icon {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.6);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .profit-card .pcc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .profit-card .pcc-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-mid);
+    }
+    .profit-card .pcc-list li .bullet {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--blue-mid);
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .profit-card.pc-promoter .pcc-list li .bullet { background: var(--teal); }
+    .profit-card.pc-raky    .pcc-list li .bullet { background: var(--gold); }
+
+    #s5 .bottom-cta {
+      text-align: center;
+      padding: 4mm 8mm;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--teal) 100%);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .05em;
+    }
+
+    /* =================== PAGE 6 — Closing =================== */
+    #s6 .slide-body {
+      background: linear-gradient(135deg, #0d3b7a 0%, #1565c0 55%, #00695c 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #s6 .deco-circle { position: absolute; border-radius: 50%; opacity: .08; background: #fff; }
+    #s6 .c1 { width: 300px; height: 300px; bottom: -120px; left: -100px; }
+    #s6 .c2 { width: 160px; height: 160px; top: -50px;  right: -50px; }
+
+    #s6 .s6-top { font-size: 12px; letter-spacing: .25em; color: rgba(255,255,255,.6); margin-bottom: 10px; }
+    #s6 .s6-title { font-size: 32px; font-weight: 800; color: #fff; text-align: center; line-height: 1.3; }
+    #s6 .s6-title span { color: #7dd3f7; }
+    #s6 .s6-divider { width: 50px; height: 3px; background: var(--gold); border-radius: 2px; margin: 14px auto; }
+    #s6 .s6-tagline { font-size: 13px; color: rgba(255,255,255,.8); text-align: center; line-height: 1.7; max-width: 200mm; }
+
+    #s6 .s6-badges {
+      display: flex;
+      gap: 10mm;
+      margin-top: 14px;
+    }
+    .s6-badge {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 8px;
+      padding: 8px 16px;
+      text-align: center;
+    }
+    .s6-badge .sb-val { font-size: 18px; font-weight: 800; color: #7dd3f7; }
+    .s6-badge .sb-lbl { font-size: 10px; color: rgba(255,255,255,.65); margin-top: 2px; }
+
+    #s6 .s6-contact {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      color: rgba(255,255,255,.55);
+      letter-spacing: .05em;
+    }
+
+    /* ===================== Print Button (screen only) ===================== */
+    .print-btn-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 16px 0 4px;
+    }
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 28px;
+      background: var(--blue);
+      color: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      letter-spacing: .04em;
+      box-shadow: 0 2px 8px rgba(21,101,192,.35);
+      transition: background .2s;
+    }
+    .print-btn:hover { background: #0d47a1; }
+    @media print { .print-btn-wrap { display: none; } }
+
+    /* =================== NEW SECTION — 产品详解 · 界面演示 · 竞品对比 =================== */
+
+    /* --- Section intro slide (sa-intro) --- */
+    #sa-intro .slide-body {
+      background: linear-gradient(135deg, #0d3b7a 0%, #1565c0 45%, #00695c 100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #sa-intro .deco-circle { position: absolute; border-radius: 50%; opacity: .08; background: #fff; }
+    #sa-intro .c1 { width: 260px; height: 260px; bottom: -100px; right: -80px; }
+    #sa-intro .c2 { width: 150px; height: 150px; top: -50px;  left: -50px; }
+    #sa-intro .intro-label {
+      font-size: 11px;
+      letter-spacing: .25em;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    #sa-intro .intro-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #fff;
+      text-align: center;
+      line-height: 1.2;
+      letter-spacing: .04em;
+    }
+    #sa-intro .intro-title span { color: #7dd3f7; }
+    #sa-intro .intro-divider {
+      width: 60px; height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 16px auto;
+    }
+    #sa-intro .intro-items {
+      display: flex;
+      gap: 8mm;
+      margin-top: 8px;
+    }
+    #sa-intro .intro-item {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 8px;
+      padding: 4mm 6mm;
+      text-align: center;
+      min-width: 46mm;
+    }
+    #sa-intro .intro-item .ii-num {
+      font-size: 11px;
+      color: rgba(255,255,255,.5);
+      letter-spacing: .1em;
+      margin-bottom: 4px;
+    }
+    #sa-intro .intro-item .ii-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,.9);
+      line-height: 1.45;
+    }
+
+    /* --- Sales Strategy & Pricing slide (sa1) --- */
+    #sa1 .slide-body {
+      padding: 6mm 12mm 4mm;
+      flex-direction: column;
+      gap: 3mm;
+    }
+    #sa1 .sa1-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    #sa1 .sa1-main-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    #sa1 .sa1-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    #sa1 .sa1-content {
+      display: flex;
+      gap: 4mm;
+      flex: 1;
+    }
+    #sa1 .sa1-cards {
+      flex: 1.65;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 3mm;
+    }
+    #sa1 .sa1-pricing {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3mm;
+    }
+    .sa1-card {
+      background: #f7faff;
+      border-radius: 8px;
+      padding: 3.5mm 4mm;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      border: 1px solid var(--divider);
+      position: relative;
+      overflow: hidden;
+    }
+    .sa1-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .sa1-card.c-blue  { background: #f0f7ff; }
+    .sa1-card.c-teal  { background: #f0f9f8; }
+    .sa1-card.c-green { background: #f1f8f1; }
+    .sa1-card.c-amber { background: #fffbf4; }
+    .sa1-card.c-blue::before  { background: var(--blue); }
+    .sa1-card.c-teal::before  { background: var(--teal); }
+    .sa1-card.c-green::before { background: #2e7d32; }
+    .sa1-card.c-amber::before { background: #fb8c00; }
+    .sa1-card .sac-head {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .sa1-card .sac-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .sa1-card .sac-badge {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .sa1-card.c-blue  .sac-badge { background: var(--blue-light);  color: var(--blue); }
+    .sa1-card.c-teal  .sac-badge { background: var(--teal-light);  color: var(--teal); }
+    .sa1-card.c-green .sac-badge { background: #e8f5e9; color: #2e7d32; }
+    .sa1-card.c-amber .sac-badge { background: #fff3e0; color: #fb8c00; }
+    .sa1-card .sac-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .sa1-card .sac-list li {
+      font-size: 12px;
+      color: var(--text-mid);
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.55;
+    }
+    .sa1-card .sac-list li::before {
+      content: "·";
+      position: absolute;
+      left: 2px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    /* Pricing panel */
+    .pricing-panel {
+      background: #f0f7ff;
+      border: 1px solid #b3d1f5;
+      border-radius: 8px;
+      padding: 4mm 4.5mm;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5mm;
+      flex: 1;
+    }
+    .pricing-panel .pp-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--blue);
+      padding-bottom: 2mm;
+      border-bottom: 1px solid #c5ddf5;
+    }
+    .pricing-row-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 0;
+      border-bottom: 1px dashed #d0dff0;
+    }
+    .pricing-row-item:last-of-type { border-bottom: none; }
+    .pricing-row-item .pri-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .pricing-row-item .pri-price {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .pricing-row-item .pri-unit {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .pricing-gold-box {
+      background: linear-gradient(135deg, #e6a817 0%, #f9c846 100%);
+      border-radius: 8px;
+      padding: 3.5mm 4mm;
+      text-align: center;
+      margin-top: auto;
+    }
+    .pricing-gold-box .pgb-label {
+      font-size: 11px;
+      letter-spacing: .06em;
+      color: rgba(26,20,0,.65);
+      font-weight: 600;
+    }
+    .pricing-gold-box .pgb-value {
+      font-size: 30px;
+      font-weight: 800;
+      color: #1a2340;
+      line-height: 1.15;
+    }
+    .pricing-gold-box .pgb-sub {
+      font-size: 11.5px;
+      color: rgba(26,20,0,.7);
+      font-weight: 600;
+    }
+
+    /* --- Image placeholder slides (sa2–sa6) --- */
+    .img-slide .slide-body {
+      flex-direction: column;
+      padding: 0;
+    }
+    .img-slide .is-top {
+      padding: 5mm 12mm 3mm;
+      flex-shrink: 0;
+    }
+    .img-slide .is-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .img-slide .is-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    .img-slide.teal-accent   .is-title { color: var(--teal); }
+    .img-slide.purple-accent .is-title { color: #6a1b9a; }
+    .img-slide .is-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .img-slide .is-desc {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-top: 3px;
+      max-width: 240mm;
+    }
+    .img-slide .is-img-area {
+      flex: 1;
+      margin: 0 12mm 4mm;
+      border: 2px dashed #c4cfdf;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f6f8fb;
+    }
+    .img-slide .ip-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .img-slide .ip-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: var(--blue-light);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .img-slide.teal-accent   .ip-icon { background: var(--teal-light); }
+    .img-slide.purple-accent .ip-icon { background: #f3e5f5; }
+    .img-slide .ip-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .img-slide .ip-hint {
+      font-size: 12px;
+      color: #b0bcd0;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="print-btn-wrap">
+  <button class="print-btn" onclick="window.print()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="display:inline-block;">
+      <path d="M6 9V2h12v7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="6" y="14" width="12" height="8" rx="1" stroke="#fff" stroke-width="2"/>
+    </svg>
+    打印 / 导出 PDF（请选择横向 A4）
+  </button>
+</div>
+
+<!-- ============================================================
+     PAGE 1 — WELCOME
+     ============================================================ -->
+<div class="slide" id="s1">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="deco-circle c1"></div>
+    <div class="deco-circle c2"></div>
+    <div class="deco-circle c3"></div>
+
+    <h1 class="s1-title">
+      携手共赢<br/><span>共启口腔新局</span>
+    </h1>
+    <div class="s1-divider"></div>
+    <p class="s1-subtitle">松佰供应链战略合作推广提案</p>
+
+    <div class="s1-meta">
+      <div class="s1-meta-item">
+        <span class="mi-label">演讲人</span>
+        <span class="mi-val">轻松牙医</span>
+      </div>
+      <div class="s1-meta-item">
+        <span class="mi-label">议题</span>
+        <span class="mi-val">供应链合作推广方案</span>
+      </div>
+      <div class="s1-meta-item">
+        <span class="mi-label">会议</span>
+        <span class="mi-val">集团总经理会</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- ============================================================
+     PAGE 2 — WHY SWITCH (Pain Points & Opportunity)
+     ============================================================ -->
+<div class="slide" id="s2">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="s2-title-row">
+      <h2 class="s2-main-title">门诊换软件的四大驱动力</h2>
+      <span class="s2-sub">— 为什么现在是最好的切入时机</span>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 1: Regulatory Pressure -->
+      <div class="pain-card red">
+          <div class="pc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#e53935" stroke-width="2" fill="none"/>
+            <path d="M12 8v4m0 4h.01" stroke="#e53935" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="pc-title">监管合规压力加剧</span>
+        
+        <ul class="pc-list">
+          <li>医疗专项检查持续列为年度重点</li>
+          <li>医保稽查随时启动，历史数据均在审查范围</li>
+          <li>税务核查力度加强，历史账目须经得起核验</li>
+          <li>数据合规问题或引发补税、罚款乃至刑事风险</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Data Risk -->
+      <div class="pain-card amber">
+        <div class="pc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="11" width="18" height="11" rx="2" stroke="#fb8c00" stroke-width="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4" stroke="#fb8c00" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="pc-title">数据安全隐患频现</p>
+        <ul class="pc-list">
+          <li>现有软件数据不在门诊自己手中</li>
+          <li>患者信息泄露事件行业内频繁发生</li>
+          <li>SaaS厂商因亏损加剧存在倒闭、跑路风险</li>
+          <li>一旦厂商停运，门诊历史数据面临永久丢失</li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Supply Chain Lock-in -->
+      <div class="pain-card blue" style="background-color: #f8ecee;">
+        <div class="pc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="#1976d2" stroke-width="2"/>
+            <path d="M12 8v4l3 3" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="pc-title">供应链迟早被人截走</p>
+        <ul class="pc-list">
+          <li>现有封闭软件无法对接外部供应链系统</li>
+          <li>不换软件，订单数据永远留在竞对平台</li>
+          <li>门诊采购渠道一旦被锁定，流失风险极高</li>
+          <li>先布局者占据先机，晚行动则拱手相让</li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Cost / Annual Fee -->
+      <div class="pain-card teal">
+        <div class="pc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="#00897b" stroke-width="2"/>
+            <path d="M12 7v1m0 8v1M9.5 9.5C9.5 8.5 10.5 8 12 8s2.5.5 2.5 1.5c0 2-5 2-5 4s1 1.5 2.5 1.5 2.5-.5 2.5-1.5" stroke="#00897b" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="pc-title">年费负担持续上升</p>
+        <ul class="pc-list">
+          <li>其他软件每年收取年费，成本逐年攀升</li>
+          <li>续费涨价已成行业惯例，门诊叫苦不迭</li>
+          <li>年费到期即停用，数据取回难度大</li>
+          <li>转换窗口稍纵即逝，越早行动阻力越小</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="bottom-note">
+      <strong>结论：</strong>门诊更换软件的外部驱动力正在快速聚集，合规压力与成本压力双重叠加，
+      <strong>现在是与门诊建立合作的最佳窗口期</strong>。
+    </p>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- ============================================================
+     PAGE 3 — ADVANTAGES OF 轻松牙医
+     ============================================================ -->
+<div class="slide" id="s3">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="s3-title-row">
+      <h2 class="s3-main-title">轻松牙医的六大核心优势</h2>
+      <span class="s2-sub">— 让门诊换得安心、用得放心</span>
+    </div>
+
+    <div class="adv-grid">
+
+      <div class="adv-card highlight">
+        <div class="ac-head">
+          <div class="ac-num">1</div>
+          <span class="ac-title">数据完全自主，安全可控</span>
+        </div>
+        <p class="ac-body">支持本地化私有部署，数据存储于门诊自己的服务器，任何第三方无法擅自调取或泄露患者信息。</p>
+        <span class="ac-tag">私有化部署 · 本地存储</span>
+      </div>
+
+      <div class="adv-card">
+        <div class="ac-head">
+          <div class="ac-num">2</div>
+          <span class="ac-title">历经三代迭代，始终都是主流</span>
+        </div>
+        <p class="ac-body">轻松牙医已完成三个版本的重大升级，功能覆盖市面软件功能，业务场景全面支持，并持续迭代。</p>
+        <span class="ac-tag">三代升级 · 持续演进</span>
+      </div>
+
+      <div class="adv-card">
+        <div class="ac-head">
+          <div class="ac-num">3</div>
+          <span class="ac-title">合规数据管理，有效应对审查</span>
+        </div>
+        <p class="ac-body">支持数据按年份、项目、科目切割，分数库管理，方便对齐财务账目。</p>
+        <span class="ac-tag">分年管理 · 财务对齐</span>
+      </div>
+
+      <div class="adv-card">
+        <div class="ac-head">
+          <div class="ac-num">4</div>
+          <span class="ac-title">灵活定制，满足大连锁及公立医院需求</span>
+        </div>
+        <p class="ac-body">提供深度定制化开发服务，大型连锁门诊或公立医院可依据自身业务场景，定制专属功能模块与数据字段。</p>
+        <span class="ac-tag">数据化定制 · 企业级扩展</span>
+      </div>
+
+      <div class="adv-card highlight">
+        <div class="ac-head">
+          <div class="ac-num">5</div>
+          <span class="ac-title">历史数据无缝迁移，零感知切换</span>
+        </div>
+        <p class="ac-body">支持将原有软件历史数据完整导入，门诊无需重新录入，配合三套皮肤主题，切换过渡体验顺畅自然。</p>
+        <span class="ac-tag">数据迁移 · 三套皮肤</span>
+      </div>
+
+      <div class="adv-card">
+        <div class="ac-head">
+          <div class="ac-num">6</div>
+          <span class="ac-title">一次购买，终身使用，无年费负担</span>
+        </div>
+        <p class="ac-body">本地授权模式，一次性购买永久使用权，告别年费与数据取回焦虑，显著降低门诊长期运营成本，财务可预期。</p>
+        <span class="ac-tag">买断制 · 零年费</span>
+      </div>
+
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+<!-- ============================================================
+     PAGE 5 — SUPPLY CHAIN VALUE & STICKINESS
+     ============================================================ -->
+<div class="slide" id="s5-chain">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body" style="padding: 7mm 12mm 5mm; flex-direction: column; gap: 4mm;">
+
+    <div style="display:flex; align-items:baseline; gap:10px;">
+      <h2 style="font-size:21px; font-weight:800; color:var(--teal);">松佰供应链的核心价值</h2>
+      <span style="font-size:16px; color:var(--text-muted);">— 软件 + 供应链深度融合，打造持续竞争壁垒</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; flex:1;">
+
+      <div style="background:#f0f9f8; border:1px solid #b2dfdb; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#e0f5f3;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z" stroke="#00897b" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">实时库存感知，精准营销</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          软件与供应链数据打通后，可实时掌握每家门诊的库存状态。结合消费历史与使用周期，构建立体用户画像，精准推送补货建议，显著提升客单频次。
+        </p>
+      </div>
+
+      <div style="background:#f0f7ff; border:1px solid #90caf9; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#e3f0ff;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1565c0" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#1565c0" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">AI 智能定价与商品推荐</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          上传历史订单与价格数据后，AI 自动生成建议定价与关联商品推荐，帮助供应商在不同场景下实现动态定价，提升利润空间与上架效率。
+        </p>
+      </div>
+
+      <div style="background:#e8f5e9; border:1px solid #a5d6a7; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#c8e6c9;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#2e7d32" stroke-width="2"/><path d="M16 3v4M8 3v4M12 12v3m0-3h3m-3 0H9" stroke="#2e7d32" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">一键下单，一键入库</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          软件与供应链系统全面打通，门诊可直接在软件内<strong>一键下单</strong>至供应链端；到货后扫码或确认即完成<strong>一键入库</strong>，采购全程无纸化，彻底告别手工记账。
+        </p>
+      </div>
+
+      <div style="background:#fffde7; border:1px solid #ffe082; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#fff8e1;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#e6a817" opacity=".3"/><path d="M12 6v6l4 2" stroke="#e6a817" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">持续黏性，提升复购率</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          软件与供应链一体化构成天然闭环，门诊日常使用软件即可完成采购。深度绑定场景使客户难以流失，月均活跃度与复购率均得到有效提升。
+        </p>
+      </div>
+
+      <div style="background:#fce4ec; border:1px solid #f48fb1; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#fce4ec;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#c62828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#c62828" stroke-width="2"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">数据主权，拒绝被平台绑架</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          门诊数据完全归属门诊本身。透明可信赖的数据治理模式是赢得大型门诊客户信任的关键。
+        </p>
+      </div>
+
+      <div style="background:#f3e5f5; border:1px solid #ce93d8; border-radius:8px; padding:4mm 4.5mm; display:flex; flex-direction:column; gap:5px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:28px;height:28px;border-radius:7px;background:#e1bee7;display:flex;align-items:center;justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#7b1fa2" stroke-width="2"/><path d="M8 2v4M16 2v4M3 10h18" stroke="#7b1fa2" stroke-width="2" stroke-linecap="round"/><path d="M8 14h2m2 0h4M8 17h4" stroke="#7b1fa2" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <span style="font-size:16px;font-weight:700;color:var(--text-dark);">合规录入，百倍提效</span>
+        </div>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.6;">
+          国家要求库房系统记录<strong>生产批准文号、批次号、有效期</strong>等完整信息，传统手录耗时极长。接入松佰供应链后，商品分类、品名及<strong>三证资料</strong>自动同步至门诊端，录入效率提升百倍，彻底解放库管人员。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- ============================================================
+     PAGE 4 — COOPERATION STEPS
+     ============================================================ -->
+<div class="slide" id="s4">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="s4-main-title">四步推广方案 — 我们如何携手落地</h2>
+
+    <div class="steps-row">
+
+      <div class="step-card s1c">
+        <span class="sc-step-num">STEP 01</span>
+        <div class="sc-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#1565c0" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="9" cy="7" r="4" stroke="#1565c0" stroke-width="2"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#1565c0" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="sc-title">精准拜访，建立心锚</p>
+        <p class="sc-body">
+          锁定目标门诊，由我方与供应商联合上门拜访。
+          重点介绍合规风险与数据安全议题，在门诊负责人心中埋下"风险预警"的认知锚点——让他们在监管压力来临时第一时间想到我们的解决方案。
+        </p>
+        <div class="sc-highlight">我方可配合出席拜访，提供话术与演示支持</div>
+      </div>
+
+      <div class="step-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="#c0cfe0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="step-card s2c">
+        <span class="sc-step-num">STEP 02</span>
+        <div class="sc-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#fb8c00" stroke-width="2"/>
+            <path d="M8 21h8M12 17v4" stroke="#fb8c00" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="sc-title">组建本地团队，共担成本</p>
+        <p class="sc-body">
+          可在当地招聘或培养专职业务人员，负责持续跟进目标客户。
+          双方按 <strong>50% 比例共担</strong>人员成本，以不亏损为基本原则，确保双方可持续推进，降低各自的投入风险。
+        </p>
+        <div class="sc-highlight">成本共担 50%，风险均摊</div>
+      </div>
+
+      <div class="step-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="#c0cfe0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="step-card s3c">
+        <span class="sc-step-num">STEP 03</span>
+        <div class="sc-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l3 6.3 6.9 1L17 14l1.2 6.8L12 18l-6.2 2.8L7 14 2.1 9.3l6.9-1L12 2z" stroke="#2e7d32" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="sc-title">软件推广，灵活定价</p>
+        <p class="sc-body">
+          提供两种合作方式供选择：<br/>
+          <strong>① 折扣进货</strong>：以五折价格进货，自行销售赚取差价；<br/>
+          <strong>② 免费铺设 + 提成</strong>：免费为门诊部署，按门诊年采购额 <strong>1% 提成</strong>，每家门诊每年封顶 <strong>5,000 元</strong>。
+        </p>
+        <div class="sc-highlight">五折进货 或 1% 提成（封顶5,000元/年）</div>
+      </div>
+
+      <div class="step-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="#c0cfe0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="step-card s4c">
+        <span class="sc-step-num">STEP 04</span>
+        <div class="sc-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#c62828" stroke-width="2"/>
+            <path d="M3 6h18M16 10a4 4 0 01-8 0" stroke="#c62828" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="sc-title">供应链激活，拉动首单</p>
+        <p class="sc-body">
+          门诊上线供应链后，以 <strong>"首单 1 元"</strong> 的活动策略激励客户完成第一笔下单。
+          一方面清理门诊旧库存，另一方面迅速让客户熟悉采购流程，建立使用习惯，加速复购转化。
+        </p>
+        <div class="sc-highlight">首单 1 元激活 · 清库存 · 建习惯</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+
+
+<!-- ============================================================
+     NEW SECTION — 产品详解 · 界面演示 · 竞品对比 (7 pages)
+     ============================================================ -->
+
+<!-- SECTION INTRO (sa-intro) -->
+<div class="slide" id="sa-intro">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="deco-circle c1"></div>
+    <div class="deco-circle c2"></div>
+    <p class="intro-label">PRODUCT DEEP DIVE · INTERFACE DEMO · COMPETITOR COMPARISON</p>
+    <h2 class="intro-title">产品详解 · 界面演示<br/><span>竞品直观对比</span></h2>
+    <div class="intro-divider"></div>
+    <div class="intro-items">
+      <div class="intro-item">
+        <p class="ii-num">01</p>
+        <p class="ii-text">推广策略<br/>与定价方案</p>
+      </div>
+      <div class="intro-item">
+        <p class="ii-num">02 — 04</p>
+        <p class="ii-text">供应链界面<br/>实景展示</p>
+      </div>
+      <div class="intro-item">
+        <p class="ii-num">05 — 06</p>
+        <p class="ii-text">竞品界面<br/>风格直观对比</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa1 — Sales Strategy & Pricing -->
+<div class="slide" id="sa1">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="sa1-title-row">
+      <h2 class="sa1-main-title">精准推广策略 · 产品功能亮点 · 标准定价一览</h2>
+      <span class="sa1-sub">— 因诊制宜，灵活说辞，精准打动客户</span>
+    </div>
+    <div class="sa1-content">
+
+      <!-- Left: 4 strategy cards -->
+      <div class="sa1-cards">
+
+        <!-- Card 1: Small clinic -->
+        <div class="sa1-card c-blue">
+          <div class="sac-head">
+            <span class="sac-title">小型门诊推荐策略</span>
+            <span class="sac-badge">诊位 &lt; 5 台</span>
+          </div>
+          <ul class="sac-list">
+            <li>推荐<strong>本地终身版</strong>，1,680元/台，一次购买终身使用</li>
+            <li>价格敏感期：相当于年费软件 <strong>2~3 年即可回本</strong></li>
+            <li>门槛低、入驻快，客户接受度高，推广阻力最小</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Large clinic / chain -->
+        <div class="sa1-card c-teal">
+          <div class="sac-head">
+            <span class="sac-title">大型门诊 / 连锁推荐策略</span>
+            <span class="sac-badge">诊位 ≥ 5 台</span>
+          </div>
+          <ul class="sac-list">
+            <li>从<strong>医保稽查、税务核查</strong>合规角度切入，引发负责人重视</li>
+            <li>指出竞品高年费、不支持定制、库管录入量大等痛点</li>
+            <li>我们的方案：<strong>节省人力 + 灵活定制</strong>，显著提升性价比</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: One-click ordering -->
+        <div class="sa1-card c-green">
+          <div class="sac-head">
+            <span class="sac-title">一体化采购功能亮点</span>
+            <span class="sac-badge">软件 + 供应链</span>
+          </div>
+          <ul class="sac-list">
+            <li>软件内<strong>一键下单</strong>至供应链，到货后<strong>一键入库</strong></li>
+            <li><strong>发票 + 三证资料</strong>随订单自动集成，检查时省时省力</li>
+            <li>全程无纸化，彻底告别繁琐手工录入与纸质台账</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Standalone warehouse + gradual migration -->
+        <div class="sa1-card c-amber">
+          <div class="sac-head">
+            <span class="sac-title">独立库管 · 渐进替换策略</span>
+            <span class="sac-badge">竞品用户适用</span>
+          </div>
+          <ul class="sac-list">
+            <li>客户若在用 e看牙 / 牙医管家，可先<strong>独立部署库管模块</strong></li>
+            <li>随信任度逐步提升，再导入患者管理，实现完整替换</li>
+            <li>轻松牙医同步与经销商<strong>利润分成</strong>，共同受益</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Right: Pricing panel -->
+      <div class="sa1-pricing">
+        <div class="pricing-panel">
+          <p class="pp-title">📋 标准定价</p>
+          <div class="pricing-row-item">
+            <span class="pri-name">本地终身版</span>
+            <span class="pri-price">1,680 <span class="pri-unit">元 / 台</span></span>
+          </div>
+          <div class="pricing-row-item">
+            <span class="pri-name">SaaS 单店版</span>
+            <span class="pri-price">1,800 <span class="pri-unit">元 / 年</span></span>
+          </div>
+          <div class="pricing-row-item">
+            <span class="pri-name">SaaS 连锁版</span>
+            <span class="pri-price">2,800 <span class="pri-unit">元 / 年</span></span>
+          </div>
+          <div class="pricing-gold-box">
+            <p class="pgb-label">供应商代理价 · 全线产品</p>
+            <p class="pgb-value">五折 (50%)</p>
+            <p class="pgb-sub">以上所有产品代理价格一律五折优惠</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa2 — Supply Chain: Online Ordering Interface -->
+<div class="slide img-slide teal-accent" id="sa2">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="is-top">
+      <div class="is-title-row">
+        <h2 class="is-title">松佰供应链商城 — 在线下单界面展示</h2>
+        <span class="is-sub">供应链系统 · 界面演示 01</span>
+      </div>
+      <p class="is-desc">
+        展示供应链商城的商品浏览、选购与<strong>一键下单</strong>全流程操作界面，直观呈现采购效率的大幅提升——门诊无需电话、无需填表，在软件内即可完成一次完整采购。
+      </p>
+    </div>
+    <div class="is-img-area">
+      <div class="ip-inner">
+        <div class="ip-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#00897b" stroke-width="2"/>
+            <path d="M3 6h18M16 10a4 4 0 01-8 0" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="ip-text">供应链商城下单截图区域</p>
+        <p class="ip-hint">请在此处插入截图 · 建议展示商品列表与购物车界面</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa3 — Supply Chain: One-Click Warehousing Interface -->
+<div class="slide img-slide teal-accent" id="sa3">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="is-top">
+      <div class="is-title-row">
+        <h2 class="is-title">一键入库 — 到货确认操作界面展示</h2>
+        <span class="is-sub">供应链系统 · 界面演示 02</span>
+      </div>
+      <p class="is-desc">
+        展示门诊到货后，扫码或点击确认即可完成<strong>一键入库</strong>的简洁操作流程；库存自动更新，采购记录自动归档，彻底告别繁琐的手工录入与纸质台账。
+      </p>
+    </div>
+    <div class="is-img-area">
+      <div class="ip-inner">
+        <div class="ip-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="#00897b" stroke-width="2"/>
+            <path d="M12 12v3m0-3h3m-3 0H9" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="ip-text">一键入库操作截图区域</p>
+        <p class="ip-hint">请在此处插入截图 · 建议展示到货确认与库存更新界面</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa4 — Supply Chain: Invoice & Three-Certificate Management -->
+<div class="slide img-slide teal-accent" id="sa4">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="is-top">
+      <div class="is-title-row">
+        <h2 class="is-title">发票与三证资料 — 合规管理界面展示</h2>
+        <span class="is-sub">供应链系统 · 界面演示 03</span>
+      </div>
+      <p class="is-desc">
+        展示发票自动匹配与三证资料（<strong>生产许可证、经营许可证、产品注册证</strong>）随订单自动同步至门诊端的全流程界面；库管人员无需逐项手工录入，监管检查时可一键调取，省时省力。
+      </p>
+    </div>
+    <div class="is-img-area">
+      <div class="ip-inner">
+        <div class="ip-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="4" width="18" height="16" rx="2" stroke="#00897b" stroke-width="2"/>
+            <path d="M8 2v4M16 2v4M3 10h18" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 14h8M8 17h5" stroke="#00897b" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="ip-text">发票与三证管理截图区域</p>
+        <p class="ip-hint">请在此处插入截图 · 建议展示三证资料查阅与发票管理界面</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa5 — Interface Style Comparison #1 -->
+<div class="slide img-slide purple-accent" id="sa5">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="is-top">
+      <div class="is-title-row">
+        <h2 class="is-title">软件界面风格直观对比（一）</h2>
+        <span class="is-sub">轻松牙医 · e看牙 · 牙医管家</span>
+      </div>
+      <p class="is-desc">
+        三款口腔诊所管理软件主界面风格横向对比，直观展示各产品的整体设计语言、视觉层次与色彩体验差异，帮助客户感受轻松牙医在界面简洁性与专业感上的竞争优势。
+      </p>
+    </div>
+    <div class="is-img-area">
+      <div class="ip-inner">
+        <div class="ip-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#6a1b9a" stroke-width="2"/>
+            <path d="M8 21h8M12 17v4" stroke="#6a1b9a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="ip-text">软件主界面对比截图区域</p>
+        <p class="ip-hint">请在此处插入对比截图 · 建议并排展示三款软件的主界面</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- SLIDE sa6 — Interface Style Comparison #2 -->
+<div class="slide img-slide purple-accent" id="sa6-cmp">
+  <div class="slide-header">
+    <span class="brand">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="is-top">
+      <div class="is-title-row">
+        <h2 class="is-title">软件操作界面对比（二）— 功能布局与交互体验</h2>
+        <span class="is-sub">轻松牙医 VS 主流竞品 · 深度功能评测</span>
+      </div>
+      <p class="is-desc">
+        从患者管理、预约排班、统计报表、库存管理等核心功能模块切入，深度对比<strong>轻松牙医</strong>与 e看牙、牙医管家在操作便捷性、界面逻辑与功能深度上的差异，凸显轻松牙医的实用价值。
+      </p>
+    </div>
+    <div class="is-img-area">
+      <div class="ip-inner">
+        <div class="ip-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#6a1b9a" stroke-width="2"/>
+            <path d="M8 21h8M12 17v4" stroke="#6a1b9a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="ip-text">功能模块对比截图区域</p>
+        <p class="ip-hint">请在此处插入对比截图 · 建议展示核心功能模块的操作界面对比</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer"><span>严格保密 · 仅供内部使用</span></div>
+</div>
+
+
+<!-- ============================================================
+     PAGE 6 — PROFIT SHARING & CLOSING
+     ============================================================ -->
+<div class="slide" id="s6">
+  <div class="slide-header" >
+    <span class="brand" style="color:rgba(255,255,255,.9);">松佰集团 · 轻松牙医 · 松佰供应链</span>
+  </div>
+  <div class="slide-body">
+    <div class="deco-circle c1"></div>
+    <div class="deco-circle c2"></div>
+
+    <h2 class="s6-title">三方共赢 · 利益清晰可期<br/></h2>
+    <div class="s6-divider"></div>
+
+    <!-- Profit cards row -->
+    <div style="display:flex; gap:8mm; margin-top:4px;">
+
+      <!-- Supplier -->
+      <div style="flex:1; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.2); border-radius:10px; padding:5mm 5mm; display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h9v4H3z" stroke="#7dd3f7" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <span style="font-size:14px;font-weight:800;color:#fff;">供应商公司</span>
+        </div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:5px; padding:0;">
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#7dd3f7;font-weight:700;">·</span>打通门诊软件，直接触达终端采购决策</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#7dd3f7;font-weight:700;">·</span>供应链商城上线后，订单量持续增长</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#7dd3f7;font-weight:700;">·</span>AI 推荐提升客单价，精准营销降低获客成本</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#7dd3f7;font-weight:700;">·</span>门诊黏性提升，老客户流失率显著降低</li>
+        </ul>
+      </div>
+
+      <!-- Promoter -->
+      <div style="flex:1; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.2); border-radius:10px; padding:5mm 5mm; display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#b2f5ea" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#b2f5ea" stroke-width="1.8"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#b2f5ea" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <span style="font-size:14px;font-weight:800;color:#fff;">推广人员</span>
+        </div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:5px; padding:0;">
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#b2f5ea;font-weight:700;">·</span>软件销售差价（进货价五折，零售价自定）</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#b2f5ea;font-weight:700;">·</span>轻松牙医协助铺设，较少工作量更多收益机会</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#b2f5ea;font-weight:700;">·</span>供应链订单持续产生给推广人员带来被动收益</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#b2f5ea;font-weight:700;">·</span>人员成本 50% 由双方分担，个人利益有保障</li>
+        </ul>
+      </div>
+
+      <!-- 轻松牙医 -->
+      <div style="flex:1; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.2); border-radius:10px; padding:5mm 5mm; display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6.3 6.9 1L17 14l1.2 6.8L12 18l-6.2 2.8L7 14 2.1 9.3l6.9-1L12 2z" stroke="#ffe082" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <span style="font-size:14px;font-weight:800;color:#fff;">轻松牙医软件</span>
+        </div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:5px; padding:0;">
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#ffe082;font-weight:700;">·</span>软件装机量快速扩大，品牌影响力持续提升</li>
+          <li style="font-size:12.5px;color:rgba(255,255,255,.85);display:flex;align-items:flex-start;gap:6px;"><span style="color:#ffe082;font-weight:700;">·</span>借助供应商渠道快速覆盖区域市场，<br>采购额1%提成（单门诊上限5000元）</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="s6-contact">轻松牙医软件 · 集团总经理会议 · 2026</p>
+  </div>
+  <div class="slide-footer" style="background: rgba(255,255,255,.1); border-top:1px solid rgba(255,255,255,.1);">
+    <span style="color:rgba(255,255,255,.6);">携手共赢，共启口腔新局 — 期待与各位共同开创</span>
+  </div>
+</div>
+
+</body>
+</html>
